@@ -3,16 +3,16 @@
     <div class="w3-top">
       <div style="display:flex" class="w3-bar w3-white w3-wide w3-padding w3-card">
         <router-link to="/">
-        <a class="w3-bar-item w3-button">IPCAM</a>
+        <a class="w3-bar-item w3-button">AIO</a>
         </router-link>
       
         <!-- Float links to the right. Hide them on small screens -->
         <div class="w3-right w3-hide-small" style="margin-left:auto; margin-right:0">
-          <router-link to="/metalle">
+          <router-link to="/hardware">
           <a class="w3-bar-item w3-button">Hardware</a>
           </router-link>
-          <router-link to="/computex">
-          <a href="#about" class="w3-bar-item w3-button">Software</a>
+          <router-link to="/software">
+          <a class="w3-bar-item w3-button">Software</a>
           </router-link>
   
         </div>
@@ -38,24 +38,13 @@
 </template>
 
 <script>
-import {
-  mdiFacebook,
-  mdiInstagram,
-  mdiGithubCircle,
-  mdiLinkedin,
-  mdiCopyright
-} from "@mdi/js";
 
 export default {
   name: "app",
   components: {},
   data() {
     return {
-      fbLogo: mdiFacebook,
-      igLogo: mdiInstagram,
-      gitHubLogo: mdiGithubCircle,
-      linkedInLogo: mdiLinkedin,
-      copyRightLogo: mdiCopyright
+     
     };
   }
   

@@ -25,14 +25,14 @@
 
       <div class="w3-row-padding">
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <router-link to="/metalle">
+          <router-link to="/hardware">
             <div>
               <v-btn  class="btnware">Hardware</v-btn>
             </div>
         </router-link>
         </div>
         <div class="w3-col l3 m6 w3-margin-bottom">
-          <router-link to="/computex">
+          <router-link to="/software">
             <div>
               <v-btn  class="btnware">Software</v-btn>
             </div>
