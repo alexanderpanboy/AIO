@@ -5,17 +5,16 @@ import vuetify from "./plugins/vuetify";
 import metalle from "./components/metalle.vue";
 import computex from "./components/computex.vue";
 import hi from "./components/Hi.vue";
-import Gface from "./components/Gface.vue";
-import wood from "./components/Wood.vue";
-
+import hello from "./components/hello.vue";
 
 Vue.use(VueRouter);
 const routes = [
   { path: "/metalle", component: metalle },
   { path: "/computex", component: computex },
+  { path: "/hello", component: hello },
   { path: "/", component: hi },
-  { path: "/gface", component: Gface },
-  { path: "/wood", component: wood },
+
+
 ];
 
 const router = new VueRouter({

@@ -47,7 +47,21 @@
                 {{ chi.text }}
               </a>
             </v-layout>
-          </v-flex>    
+          </v-flex>
+
+          <div>
+            <br>
+            <br>
+
+          更新程式(Update Software)　流程:<br>
+          <ol>
+　　<li>由對外網路下載更新程式</li>
+　　<li>手動放至內網資料夾</li>
+　　<li>透由web介面將更新程式上傳, 上傳Server後會自動更新程式至各AIO機器(Client端)</li>
+</ol>
+         </div>
+
+    
           <v-flex
             xs12
             mb-5
@@ -66,17 +80,6 @@
                 {{ eng.text }}
               </a>
             </v-layout>
-            <div>
-              <br>
-              <br>
-  
-            保固條款:<br>
-            <ul>
-  　　<a href="https://www.gigabyte.com/tw/Support/Warranty/All-in-One-Barebone"><li>AIO-M2</li></a>
-  　　<a href=" https://service.gigabyte.tw/Home/Content/72?type=v&menuid=85"><li>AIO-S1</li></a>
-  　
-  </ul>
-           </div>
           </v-flex>
     
         </v-layout>
@@ -89,13 +92,13 @@
 
 <script>
 export default {
-  name: "computex",
+  name: 'hello',
 
-  data() { return {
+  data: () => ({
     chinese: [
       {
         text: '使用者管理',
-        href: '/computex',
+        href: '',
       },
       {
         text: '使用者手冊',
@@ -144,14 +147,7 @@ export default {
         href: '',
       },
     ],
-
-
-
-
- 
-
-};
-},
-
+   
+  }),
 };
 </script>

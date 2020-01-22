@@ -2,36 +2,19 @@
   <div id="app">
     <div class="w3-top">
       <div style="display:flex" class="w3-bar w3-white w3-wide w3-padding w3-card">
-        <a href="#home" class="w3-bar-item w3-button">
-          <b>Alexander</b> Pan
-        </a>
-        <div style="margin-left:auto; margin-right:0">
-          <a href="https://www.facebook.com/a0912716568" target="_blank">
-            <v-btn icon small style="padding-right:18px; padding-left:8px;">
-              <v-icon>{{fbLogo}}</v-icon>
-            </v-btn>
-          </a>
-          <a href="https://www.instagram.com/alexanderpanboy" target="_blank">
-            <v-btn icon small style="padding-right:18px; padding-left:8px;">
-              <v-icon>{{igLogo}}</v-icon>
-            </v-btn>
-          </a>
-          <a href="https://github.com/alexanderpanboy" target="_blank">
-            <v-btn icon small style="padding-right:18px; padding-left:8px;">
-              <v-icon>{{gitHubLogo}}</v-icon>
-            </v-btn>
-          </a>
-          <a href="https://www.linkedin.com/in/alexander-a-pan-444755151" target="_blank">
-            <v-btn icon small style="padding-right:18px; padding-left:8px;">
-              <v-icon>{{linkedInLogo}}</v-icon>
-            </v-btn>
-          </a>
-        </div>
+        <router-link to="/">
+        <a class="w3-bar-item w3-button">IPCAM</a>
+        </router-link>
+      
         <!-- Float links to the right. Hide them on small screens -->
-        <div class="w3-right w3-hide-small">
-          <a href="#projects" class="w3-bar-item w3-button">Projects</a>
-          <a href="#about" class="w3-bar-item w3-button">About</a>
-          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+        <div class="w3-right w3-hide-small" style="margin-left:auto; margin-right:0">
+          <router-link to="/metalle">
+          <a class="w3-bar-item w3-button">Hardware</a>
+          </router-link>
+          <router-link to="/computex">
+          <a href="#about" class="w3-bar-item w3-button">Software</a>
+          </router-link>
+  
         </div>
       </div>
     </div>
@@ -42,34 +25,12 @@
     <v-footer dark padless>
       <v-card class="flex" flat tile>
         <v-card-title class="w3-dark-grey">
-          <strong class="subheading">Get connected with me on social networks!</strong>
-          <div style="margin-left:auto; margin-right:0">
-            <a href="https://www.facebook.com/a0912716568" target="_blank">
-              <v-btn icon small style="padding-right:18px; padding-left:8px;">
-                <v-icon>{{fbLogo}}</v-icon>
-              </v-btn>
-            </a>
-            <a href="https://www.instagram.com/alexanderpanboy" target="_blank">
-              <v-btn icon small style="padding-right:18px; padding-left:8px;">
-                <v-icon>{{igLogo}}</v-icon>
-              </v-btn>
-            </a>
-            <a href="https://github.com/alexanderpanboy" target="_blank">
-              <v-btn icon small style="padding-right:18px; padding-left:8px;">
-                <v-icon>{{gitHubLogo}}</v-icon>
-              </v-btn>
-            </a>
-            <a href="https://www.linkedin.com/in/alexander-a-pan-444755151" target="_blank">
-              <v-btn icon small style="padding-right:18px; padding-left:8px;">
-                <v-icon>{{linkedInLogo}}</v-icon>
-              </v-btn>
-            </a>
-          </div>
+          <strong class="subheading">GIGABYTE Technology</strong>
         </v-card-title>
         <v-card-text class="w3-black py-2 white--text text-center">
           <v-icon>{{copyRightLogo}}</v-icon>
           {{ new Date().getFullYear() }} —
-          <strong>Alexander Pan</strong>
+          <strong>GIGABYTE</strong>
         </v-card-text>
       </v-card>
     </v-footer>
@@ -117,50 +78,12 @@ export default {
 .projectTitle{
   z-index: 2;
 }
-.w3-animate-zoom {
-  animation: animatezoom 2.7s;
-}
-.projectsPhoto > div {
-  z-index: 1;
-}
-.projectsPhoto:hover >img {
-  transform: scale(1.2);
-  transition: all 500ms ease-in;
-  filter: invert(1);
-  opacity: 0.5;
-}
 
-.projectsPhoto {
-  overflow: hidden;
-}
-.aboutBox {
-  margin: 0 auto;
-}
+
 .v-image__image--cover {
   background-size: contain !important;
 }
-.photo-text{
-	    position: absolute;
-	    top: 0; right: 0;
-	    bottom: 0; left: 0;
-	    text-align: center;
-	    background-color: rgba(0,0,0,0.8);
-	    opacity: 0;
-	    -webkit-transition: opacity 0.6s;
-	    -moz-transition: opacity 0.6s;
-	    transition: opacity 0.6s;
-       vertical-align:middle;
-       line-height:200px;
-	}
-
-	.photo-text:hover{
-	    opacity: 1;      
-	}
-
-	.photo-text h4{
-	    color: white;
-	    display: inline-table;
-       vertical-align:middle;
-       line-height:100%;            
-	}
+.btnware{
+  background-color: #2c3e50 !important ;
+}
 </style>
