@@ -84,6 +84,6 @@ export default {
   background-size: contain !important;
 }
 .btnware{
-  background-color: #2c3e50 !important ;
+  background-color: rgb(146, 170, 162) !important ;
 }
 </style>
